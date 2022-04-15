@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --large-width: 100%;
+    --normal-width: 1150px;
+    --primary-color: #012951;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #011C38; 
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.container-full {
+    width: var(--large-width);
+}
+.container {
+    width: var(--normal-width);
+    margin: auto;
+}
+.header {
+    background-image: url("../images/background.png");
+    color: #fff;
+}
+.header a {
+    color: #fff;
+}
+.header a:hover, .container-3col-item a:hover {
+    opacity: 0.6;
+}
+.header-top {
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(1,28,56,0.3);
+}
+.header-bottom {
+    height: 100px;
+    display: flex;
+    /* background-color: #011C38; */
+}
+
+
+.header-top-content {
+    display: flex;
+    justify-content: space-between;
+}
+.header ul {
+    list-style: none;
+}
+.header li {
+    display: inline-table;
+}
+.header li+li {
+    margin-left: 20px;
+}
+.header-bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+.header-bottom-title {
+    font-size: 1.5em;
+}
+.header-bottom-menu {
+    font-size: 1.1em;
+}
+.banner {
+    height: 320px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.banner-content {
+    display: flex;
+}
+.banner-image , .banner-connect {
+    width: 50%;
+}
+.banner-image img {
+    position: relative;
+    top: 30px;
+}
+.banner-connect-form {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50%;
+    row-gap: 5px;
+    column-gap: 15px;
+}
+.connect-title {
+    grid-column: 1/3;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+.connect-button {
+    grid-column:1/3;
+    grid-row: 4/5;
+    text-align: right;
+}
+.banner-connect-form input {
+    width: 100%;
+    line-height: 25px;
+    background-color: #1B334C;
+    border: none;
+    padding: 5px;
+    color: #fff;
+}
+.banner-connect-form button {
+    background-color: transparent;
+    border: 2px solid #ea6645;
+    color: #ea6645;
+    padding: 8px 15px 8px 15px;
+}
+
+
+.container-3col {
+    display:grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 300px; /* tam */
+    margin-top: 60px;
+}
+
+
+
+.container-2col {
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 300px; /* tam */
+    margin-top: 60px;
+}
+
+
+
+.footer {
+    background: url(../images/background.png);
+    color: #fff;
+}
+
+.footer-bottom {
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(1,28,56,0.6);   
+}
+
+.box-title {
+    font-size:2em;
+    position: relative;
+}
+
+.line-after-gray::after {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #ccc;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    z-index: 99;
+}
+
+.line-after-blue::after {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #536578;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    z-index: 99;
+}
+
+.links-content {
+    background-color: #012951;
+    color: #fff;
+    padding: 30px;
+}
+
+.container-3col-item li {
+    margin-top: 15px;
+}
+
+.container-3col-item ul{
+    margin-top:32px;
+    padding-left: 20px;
+
+}
+
+.img-about-us {
+    margin-top: 30px;
+}
+
+.news-item{
+    padding: 15px 0;
+    border-bottom: #ccc 1px solid;
+}
+  
+.news-day{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+  
+.news-day-icon{
+    font-size: 1.1em;
+    color: #7c7c7c;
+}
+  
+.news-day-text{
+    font-size: 1.1em;
+    color: #7c7c7c;
+}
+  
+.news-content{
+    display: block;
+    font-size: 1.1em;
+    color: #012951;
+    padding-left: 20px;
+    padding-top: 15px;
+    line-height: 1.3em;
+}
+
+.bg-gray{
+    background-color: #ccc;
+}
+  
+.bg-orange{
+    background-color: #EA6645;
+}
+  
+.bg-blue{
+    background-color: #011c38;
+}
+
+.events-item-time{
+    width: 70px;
+    height: 75px;
+    position: relative;
+    color: white;
+}
+  
+.events-item-month{
+    font-size: 1.5em;
+    text-align: center;
+}
+  
+.events-item-day{
+    font-size: 5em;
+    font-weight: bold;
+    position: absolute;
+    right: -10px;
+    bottom: -15px;
+}
+  
+.events-item{
+    display: grid;
+    grid-template-columns: 72px auto;
+    column-gap: 20px;
+    padding: 15px 0;
+}
+  
+.events-item-content-title{
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: #274d75;
+}
+  
+.events-item-content-sub{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #7c7c7c;
+    padding-top: 15px;
+}
+
+.text-about-us {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #000;
+    opacity: 0.7;
+}
+
+.container-2col-item .picture-gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-2col-item .picture-gallery {
+    display: grid;
+    padding: 30px 0;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.container-2col-item .information img {
+    height: 111px;
+}
+.information {
+    padding: 30px 0;
+    width: 98%;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.infomation-line{
+    /* content: " "; */
+    margin: 10px 0;
+    height: 1.5px;
+    width: 50px;
+    background-color: #ccc;
+  }
+.infomation-content-img-1 {
+    width: 78px;
+    height: 78px;
+    background-image: url(../images/guong-mat-tieu-bieu-01.jpg);
+    background-size: contain;
+}
+
+.infomation-content{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.infomation-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+.infomation-major {
+    font-size: 1.1em;
+    line-height: 1.3;
+    color: #777;
+}
+
+.infomation-award {
+    font-size: 1.1em;
+    line-height: 1.3;
+    color: #000;
+    padding-top: 5px;
+}
+
+.infomation-content-img-2 {
+    width: 78px;
+    height: 78px;
+    background-image: url(../images/guong-mat-tieu-bieu-02.jpg);
+    background-size: contain;
+}
+
+.gioithieu {
+    text-align: justify;
+    margin-top: 32px;
+    padding-top: 5px;
+    line-height: 1.6;
+}
+
+.footer-top .box-title {
+    padding-top: 30px;
+}
+
+.address-infomation {
+    padding: 30px 0;
+}
+
+.address-infomation h1 {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    line-height: 35px;
+}
